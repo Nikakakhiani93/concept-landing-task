@@ -95,6 +95,10 @@
   margin-left: 0;
 }
 
+.dlf p {
+  font-size: 12px;
+}
+
 li a {
   font-size: 16px;
 }
