@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'TBCreg';
+  src: url('/fonts/TBCXRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TBCbold';
+  src: url('/fonts/TBCXBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TBCmed';
+  src: url('/fonts/TBCXMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: TBCreg, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f9fafa;
+  color: #555f62;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.plf {
+  padding: 0 20px;
+}
+
+#nav {
+  background-color: #fff;
+}
+
+.ml-6 {
+  margin-left: 6px;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bw {
+  background-color: white;
+}
+
+.ptb40 {
+  padding: 40px 0;
+}
+
+.cursor {
+  cursor: pointer;
+}
