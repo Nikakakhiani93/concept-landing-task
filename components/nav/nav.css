@@ -251,11 +251,11 @@ nav a {
   .language {
     display: none;
   }
+  .burger {
+    display: block;
+  }
 }
 
-.burger {
-  display: inline-block;
-}
 .logo {
   width: 36px;
 }
@@ -264,6 +264,7 @@ nav a {
   .header-logo {
     display: none;
   }
+
   .header_nav {
     display: none;
   }

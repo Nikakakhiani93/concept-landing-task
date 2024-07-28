@@ -75,3 +75,8 @@ body {
 .oy-auto {
   overflow-y: auto;
 }
+
+.p-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}

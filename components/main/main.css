@@ -233,7 +233,7 @@ main {
   margin-bottom: 8px;
 }
 
-.offer-wrapper {
+.offers-wrapper {
   padding: 40px 0;
 }
 
@@ -255,12 +255,29 @@ main {
   text-decoration: none;
 }
 
+.offer-wrapper {
+}
+
 .offers-cards {
   width: 1800px;
   overflow: auto;
   padding-bottom: 25px;
   display: flex;
   gap: 20px;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #d3d3d3;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #007aff;
+  border-radius: 20px;
 }
 
 .card {
@@ -338,7 +355,7 @@ main {
   padding: 0px 47px;
 }
 
-.download-app_inner {
+.download-app-inner {
   min-height: 374px;
   justify-content: flex-start;
   align-items: center;
@@ -348,7 +365,7 @@ main {
   position: relative;
 }
 
-.download-app_content {
+.download-app-content {
   width: 55%;
   grid-row-gap: 16px;
   flex-direction: column;
@@ -370,7 +387,7 @@ main {
   right: 0;
 }
 
-.download-app_btn {
+.download-app-btn {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   flex-wrap: wrap;
@@ -382,7 +399,7 @@ main {
   background-color: #f9fafa;
 }
 
-.soft-btn {
+.download-btn {
   color: #fff;
   text-transform: uppercase;
   border: 1px solid #e1e4e5;
@@ -413,7 +430,9 @@ main {
   text-decoration: none;
   transition: background-position 0.25s ease-in-out;
   display: none;
+  flex: 1;
 }
+
 .download-btn-mobile:hover {
   background-color: #f9fafa;
 }
@@ -430,56 +449,77 @@ main {
   .cards-wrapper {
     padding-bottom: 40px;
   }
+
+  .download-btn-mobile {
+    display: flex;
+  }
+
   .banner_content {
     justify-content: end;
     h1 {
       font-size: 16px;
     }
   }
+
   .download-btn {
     display: none;
+    border: unset;
+    padding: 16px 0;
   }
-  .get_app-wraper {
+
+  .arrow-link {
+    padding-top: 10px;
+  }
+
+  .download-app-wraper {
     padding: 32px 45px;
   }
-  .app_btn-mobile {
+
+  .download-btn-mobile {
     display: flex;
   }
+
   .soft-btn {
     display: none;
   }
-  .get_app_inner {
+
+  .download-app-inner {
     min-height: 300px;
   }
+
   .download-app-wraper {
     padding: 32px 45px;
   }
-  .download-app_inner {
+  .download-app-inner {
     min-height: 300px;
   }
+
   .numbers {
     flex-direction: column;
   }
+
   .stat-numbers {
     flex-direction: column;
   }
+
   .stats {
     padding: 40px 0;
   }
+
   .section_numbers {
     padding: 40px 0;
   }
+
   .download-app-wraper {
     padding: 32px 45px;
   }
+
   .app_btn-mobile {
     display: flex;
   }
+
   .soft_btn {
     display: none;
-  }
-  .download-app_inner {
-    min-height: 300px;
   }
 }
 
@@ -496,17 +536,23 @@ main {
     margin: 0;
   }
 
-  .download-app_inner {
+  .download-app-inner {
     min-height: 0;
     flex-direction: column;
   }
 
-  .download-app_content {
+  .section-header .view-all {
+    font-size: 12px;
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  .download-app-content {
     width: 100%;
     grid-row-gap: 28px;
   }
 
-  .download-app_btn {
+  .download-app-btn {
     width: 100%;
   }
   .stats {
@@ -532,7 +578,7 @@ main {
 
   .message-text {
     font-size: 32px;
-    padding: 0 45px 60px;
+    padding: 0 45px 36px;
   }
 
   .banner {
@@ -578,6 +624,13 @@ main {
     gap: 10px;
     height: auto;
   }
+
+  .soft-img {
+    max-height: none;
+    align-self: center;
+    position: static;
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -589,6 +642,33 @@ main {
     padding: 15px;
   }
 
+  .soft-img {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .p0-45 {
+    padding: 0 15px;
+  }
+
+  .cards-wrapper {
+    padding-left: 15px;
+  }
+
+  .cards-heading {
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .cards-heading h2 {
+    font-size: 12px;
+    color: #141719;
+  }
+
+  .message {
+    padding: unset;
+  }
+
   .message-text {
     font-size: 24px;
   }
@@ -597,7 +677,10 @@ main {
     padding: 16px 15px;
   }
 
+  .download-app {
+    padding-top: 0;
+  }
   .download-app-wraper {
-    padding: 32px 15px;
+    padding: 0 15px;
   }
 }
