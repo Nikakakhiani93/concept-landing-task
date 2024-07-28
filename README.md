@@ -49,7 +49,7 @@ type npm install and then type npm start, or otherwise project won't start.
 
 or
 
-You can simply push on Go live wchich is located on bottom bar of the VScode app and project will be started.
+You can simply push on Go live which is located on bottom bar of the VScode app and project will be started.
 
 ## Usage
 

@@ -89,8 +89,26 @@ body {
   padding-top: 20px;
 }
 
-@media screen and (min-width: 489px) {
+.ft-c {
+  font-weight: 700;
+  color: #141719;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 489px) {
   .fs-16 {
     font-size: 16px;
+  }
+  .db {
+    display: block !important;
+  }
+
+  .df {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 24px;
+    justify-content: space-between;
+    width: 100%;
   }
 }

@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }),
     new Promise((resolve) => {
       loadComponent('components/footer/footer.html', 'footer', function () {
+        initFooterDropdowns();
         resolve();
       });
     }),
@@ -49,7 +50,6 @@ function initializeDropdowns() {
       const dropdownType = event.currentTarget.getAttribute('data-dropdown');
       const isActive = event.currentTarget.classList.contains('active');
 
-      // Hide all dropdowns
       dropdownToggles.forEach((t) => t.classList.remove('active'));
       dropdownContainer.style.display = 'none';
 
@@ -106,4 +106,16 @@ function updateDropdownContent(type) {
   }
 
   dropdownLinks.innerHTML = content;
+}
+
+function initFooterDropdowns() {
+  const dropdownToggles = document.querySelectorAll('.menu_dropdown-toggle');
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener('click', function () {
+      const dropdownList = this.nextElementSibling;
+      dropdownList.classList.toggle('show');
+      this.classList.toggle('active');
+    });
+  });
 }

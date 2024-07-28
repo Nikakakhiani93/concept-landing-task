@@ -170,6 +170,7 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 18px 0 0 0;
 }
 
 .arrow-link .card_btn {
@@ -437,11 +438,9 @@ main {
 .download-btn {
   color: #fff;
   text-transform: uppercase;
-  border: 1px solid #e1e4e5;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.33;
@@ -497,9 +496,7 @@ main {
   }
 
   .download-btn {
-    display: none;
     border: unset;
-    padding: 16px 0;
   }
 
   .arrow-link {
