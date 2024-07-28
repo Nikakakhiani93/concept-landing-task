@@ -45,6 +45,10 @@ body {
   padding: 0 20px;
 }
 
+.oa {
+  overflow: auto;
+}
+
 #nav {
   background-color: #fff;
 }
@@ -79,4 +83,14 @@ body {
 .p-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.p-20 {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 489px) {
+  .fs-16 {
+    font-size: 16px;
+  }
 }
