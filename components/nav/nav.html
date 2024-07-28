@@ -8,19 +8,36 @@
         <img src="/logos/mobile-header.svg" alt="mobile-logo" />
       </div>
     </a>
-    <nav class="header_menu">
-      <ul>
-        <li>
-          <a href="#">პროდუქტები</a>
-        </li>
-        <li>
-          <a href="#">შეთავაზებები</a>
-        </li>
-        <li>
-          <a href="#">კონცეპტის სივრცე</a>
-        </li>
-      </ul>
+    <nav class="header_nav">
+      <div class="nav_dropdown n_dropdown">
+        <div
+          class="nav_dropdown-toggle n_dropdown-toggle"
+          data-dropdown="products"
+        >
+          <div>პროდუქტები</div>
+          <div class="nav_dropdown-line"></div>
+        </div>
+      </div>
+      <div class="nav_dropdown n_dropdown">
+        <div
+          class="nav_dropdown-toggle n_dropdown-toggle"
+          data-dropdown="offers"
+        >
+          <div>შეთავაზებები</div>
+          <div class="nav_dropdown-line"></div>
+        </div>
+      </div>
+      <div class="nav_dropdown n_dropdown">
+        <div
+          class="nav_dropdown-toggle n_dropdown-toggle"
+          data-dropdown="concept"
+        >
+          <div>კონცეპტის სივრცე</div>
+          <div class="nav_dropdown-line"></div>
+        </div>
+      </div>
     </nav>
+
     <div class="right-nav">
       <div class="search-icon">
         <img src="/logos/search.svg" alt="search" />
@@ -42,6 +59,23 @@
       </div>
       <div class="burger">
         <img src="/logos/burger.png" alt="menu" />
+      </div>
+    </div>
+
+    <div class="active_dropdown_container">
+      <div class="dropdown_content">
+        <div class="dropdown_sec">
+          <div class="dropdown_image">
+            <img src="/img/cards.png" alt="Dropdown Image" />
+          </div>
+
+          <div class="txt_sec">
+            <img src="/logos/arrow-up.svg" />
+            <span> ციფრული ბანკი </span>
+          </div>
+        </div>
+
+        <div class="dropdown_list"></div>
       </div>
     </div>
   </div>

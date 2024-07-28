@@ -105,3 +105,12 @@ li a {
 .df > .footer-logo {
   height: 34px;
 }
+
+.rights {
+  display: flex;
+  align-items: center;
+}
+
+.rights span {
+  margin-left: 10px;
+}
