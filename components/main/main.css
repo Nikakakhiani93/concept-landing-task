@@ -72,6 +72,18 @@ main {
   line-height: 1.5;
 }
 
+.second-banner {
+  background-image: url(https://static.tbcconcept.ge/desktop/media/nvmgsymp.3xqprivate%20banker.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+}
+
 /* ------------------------------------------------ */
 
 .cards-wrapper {
@@ -602,6 +614,10 @@ main {
 
   .cards-wrapper {
     padding-left: 45px;
+  }
+
+  .second-banner {
+    border-radius: unset;
   }
 
   .message-text {
