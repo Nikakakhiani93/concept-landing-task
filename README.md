@@ -45,7 +45,7 @@ cd web-markup-project
 
 cd web-markup-project
 
-web-markup-project/
+type npm install and then type npm start, or otherwise progect won't start.
 
 ## Usage
 
