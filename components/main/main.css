@@ -175,8 +175,7 @@ main {
   width: auto !important;
 }
 
-.arrow-link .button_text {
-  color: #fff;
+.arrow-link .download-btn {
   text-decoration: none;
   font-weight: bold;
 }
@@ -297,6 +296,128 @@ main {
   transform: translateY(-10px);
 }
 
+.app-promotion {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.app-links a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.download-app {
+  padding: 60px 0;
+}
+
+.download-app-wraper {
+  background-color: #fff;
+  padding: 0px 47px;
+}
+
+.download-app_inner {
+  min-height: 374px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  position: relative;
+}
+
+.download-app_content {
+  width: 55%;
+  grid-row-gap: 16px;
+  flex-direction: column;
+  flex: none;
+  align-items: flex-start;
+  display: flex;
+}
+.soft-img {
+  max-height: 90%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 100% 100%;
+  object-position: 100% 100%;
+  align-self: flex-end;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+.download-app_btn {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  display: flex;
+}
+
+.download-btn-mobile:hover {
+  background-color: #f9fafa;
+}
+
+.soft-btn {
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #e1e4e5;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-decoration: none;
+  transition: background-position 0.25s ease-in-out;
+  display: flex;
+}
+
+.download-btn-mobile {
+  grid-column-gap: 4px;
+  color: #182cc0;
+  text-transform: uppercase;
+  border: 1px solid #182cc0;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-decoration: none;
+  transition: background-position 0.25s ease-in-out;
+  display: none;
+}
+.download-btn-mobile:hover {
+  background-color: #f9fafa;
+}
+
 /* --------------------------------------------------- */
 
 @media screen and (max-width: 1100px) {
@@ -304,6 +425,7 @@ main {
     font-size: 32px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .cards-wrapper {
     padding-bottom: 40px;
@@ -313,6 +435,27 @@ main {
     h1 {
       font-size: 16px;
     }
+  }
+  .download-btn {
+    display: none;
+  }
+  .get_app-wraper {
+    padding: 32px 45px;
+  }
+  .app_btn-mobile {
+    display: flex;
+  }
+  .soft-btn {
+    display: none;
+  }
+  .get_app_inner {
+    min-height: 300px;
+  }
+  .download-app-wraper {
+    padding: 32px 45px;
+  }
+  .download-app_inner {
+    min-height: 300px;
   }
   .numbers {
     flex-direction: column;
@@ -326,16 +469,16 @@ main {
   .section_numbers {
     padding: 40px 0;
   }
-  .get_app-wraper {
+  .download-app-wraper {
     padding: 32px 45px;
   }
   .app_btn-mobile {
     display: flex;
   }
-  .app_btn {
+  .soft_btn {
     display: none;
   }
-  .get_app_inner {
+  .download-app_inner {
     min-height: 300px;
   }
 }
@@ -349,8 +492,38 @@ main {
     padding: 0;
   }
 
+  .download-app {
+    margin: 0;
+  }
+
+  .download-app_inner {
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  .download-app_content {
+    width: 100%;
+    grid-row-gap: 28px;
+  }
+
+  .download-app_btn {
+    width: 100%;
+  }
   .stats {
     padding: 40px 45px;
+  }
+
+  .p0-45 {
+    padding: 0 45px;
+  }
+
+  .content {
+    max-width: 50%;
+  }
+
+  .image {
+    max-width: 50%;
+    text-align: right;
   }
 
   .cards-wrapper {
@@ -369,6 +542,13 @@ main {
   .banner-content {
     padding: 240px 45px 36px;
     width: 100%;
+  }
+
+  .soft {
+    max-height: none;
+    align-self: center;
+    position: static;
+    height: auto;
   }
 
   .subscribe-button {
@@ -415,5 +595,9 @@ main {
 
   .breadcrumb {
     padding: 16px 15px;
+  }
+
+  .download-app-wraper {
+    padding: 32px 15px;
   }
 }
